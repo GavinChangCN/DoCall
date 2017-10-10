@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DoCall</string>
+    <string name="start_get_in_phone_number">获取来电号码</string>
+    <string name="cancel_get_in_phone_number">不获取来电号码</string>
+    <string name="start_get_out_phone_number">获取去电号码</string>
+    <string name="cancel_get_out_phone_number">不获取去电号码</string>
+    <string name="call">拨打电话</string>
+</resources>
