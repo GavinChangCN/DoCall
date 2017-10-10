@@ -2,12 +2,14 @@
 
 buildscript {
     ext.kotlin_version = '1.1.51'
+    ext.anko_version = '0.10.0'
     repositories {
         jcenter()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.3'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -17,6 +19,9 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        maven {
+            url 'def REPOSITORY_URL = \'http://maven.aliyun.com/nexus/content/groups/public/\''
+        }
     }
 }
 

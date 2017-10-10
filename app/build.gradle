@@ -29,6 +29,10 @@ android {
             path "CMakeLists.txt"
         }
     }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        test.java.srcDirs += 'src/test/kotlin'
+    }
 }
 
 dependencies {
@@ -36,10 +40,21 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+
+    // Kotlin
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    // For appcompat-v7 bindings
+    compile "org.jetbrains.anko:anko-appcompat-v7:$anko_version"
     compile 'com.android.support:appcompat-v7:26.0.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+
+    // 第三方的替代Log的工具
+    compile 'com.orhanobut:logger:1.15'
+    // Gson工具
+    compile 'com.google.code.gson:gson:2.8.2'
+    // Facebook 的Chrome查看App工具，地址： chrome://inspect
+    compile 'com.facebook.stetho:stetho:1.5.0'
 }
 repositories {
     mavenCentral()
