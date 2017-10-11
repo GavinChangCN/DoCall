@@ -5,7 +5,7 @@
     android:id="@+id/main_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.xbongbong.docall.MainActivity">
+    tools:context="com.xbongbong.docall.ui.activity.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,31 +15,31 @@
         <include layout="@layout/toolbar_normal_layout" />
 
         <Button
-            android:id="@+id/btn_in_call"
+            android:id="@+id/btnIncomingCall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/start_get_in_phone_number" />
 
         <Button
-            android:id="@+id/btn_in_call_cancel"
+            android:id="@+id/btnIncomingCallCancel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/cancel_get_in_phone_number" />
 
         <Button
-            android:id="@+id/btn_out_call"
+            android:id="@+id/btnOutgoingCall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/start_get_out_phone_number" />
 
         <Button
-            android:id="@+id/btn_out_call_cancel"
+            android:id="@+id/btnOutgoingCallCancel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/cancel_get_out_phone_number" />
 
         <Button
-            android:id="@+id/call"
+            android:id="@+id/btnCall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/call" />

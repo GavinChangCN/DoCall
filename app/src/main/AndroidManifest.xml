@@ -21,7 +21,7 @@
         android:supportsRtl="true"
         android:theme="@style/ImmersedTheme"
         tools:replace="android:allowBackup">
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,8 +30,8 @@
         </activity>
 
 
-        <service android:name=".service.InCallService" />
-        <service android:name=".service.OutCallService" />
+        <service android:name=".service.IncomingCallService" />
+        <service android:name=".service.OutgoingCallService" />
     </application>
 
 </manifest>
