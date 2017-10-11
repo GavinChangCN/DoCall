@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.xbongbong.docall">
 
     <!-- 拨号权限 -->
@@ -10,12 +11,16 @@
     <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
 
     <application
+        android:name=".application.DoCallApplication"
         android:allowBackup="true"
+        android:configChanges="orientation|keyboardHidden"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/ImmersedTheme"
+        tools:replace="android:allowBackup">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,6 +28,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <service android:name=".service.InCallService" />
+        <service android:name=".service.OutCallService" />
     </application>
 
 </manifest>

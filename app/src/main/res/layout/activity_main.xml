@@ -1,40 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context="com.xbongbong.docall.MainActivity">
 
-    <Button
-        android:id="@+id/btn_in_call"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/start_get_in_phone_number" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn_in_call_cancel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/cancel_get_in_phone_number" />
+        <include layout="@layout/toolbar_normal_layout" />
 
-    <Button
-        android:id="@+id/btn_out_call"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/start_get_out_phone_number"/>
+        <Button
+            android:id="@+id/btn_in_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/start_get_in_phone_number" />
 
-    <Button
-        android:id="@+id/btn_out_call_cancel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/cancel_get_out_phone_number"/>
+        <Button
+            android:id="@+id/btn_in_call_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel_get_in_phone_number" />
 
-    <Button
-        android:id="@+id/call"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/call"/>
+        <Button
+            android:id="@+id/btn_out_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/start_get_out_phone_number" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btn_out_call_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel_get_out_phone_number" />
+
+        <Button
+            android:id="@+id/call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/call" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

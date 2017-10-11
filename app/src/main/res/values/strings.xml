@@ -1,5 +1,36 @@
 <resources>
-    <string name="app_name">DoCall</string>
+    <string name="app_name">通话宝</string>
+
+    <string name="permission_dialog_title">感谢您的下载使用</string>
+    <string name="permission_dialog_intro">为了您能正常使用，需要开启以下权限</string>
+    <string name="next">下一步</string>
+    <string name="network_error">网络不给力,请检查网络后重试</string>
+
+    <!-- 6.0 android M 需要开启运行时异常校验 -->
+    <string name="permission">权限</string>
+    <string name="no_permissions">缺少必要权限</string>
+    <string name="permission_settings">设置</string>
+    <string name="permission_title">帮助</string>
+    <string name="permission_content">缺少必要权限，是否开启？</string>
+    <string name="permission_ignore">本次忽略</string>
+    <string name="permission_advice_title">开启App</string>
+    <string name="contract_service">联系客服</string>
+    <string name="feed_back">意见反馈</string>
+    <string name="setting_download">下载</string>
+    <string name="setting_remove">删除</string>
+    <string name="setting_pause">暂停</string>
+    <string name="setting_continue">继续</string>
+    <string name="setting_download_data_loading">%1$s/ </string>
+    <string name="setting_download_all_data">%1$s MB</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_service_call">呼叫</string>
+    <string name="advice">提示</string>
+    <string name="dialog_remove_offline_map_content">删除后继续使用地图将需要消耗流量，是否确定删除？</string>
+    <string name="requires_phone_call_permission">缺少电话相关权限，请进入 设置-应用程序-权限设置 中进行配置！</string>
+
+    <string name="web_view_open_outside">使用系统浏览器打开网页</string>
+
     <string name="start_get_in_phone_number">获取来电号码</string>
     <string name="cancel_get_in_phone_number">不获取来电号码</string>
     <string name="start_get_out_phone_number">获取去电号码</string>

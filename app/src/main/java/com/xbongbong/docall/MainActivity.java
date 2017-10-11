@@ -9,16 +9,18 @@ import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.xbongbong.docall.base.BaseActivity;
 import com.xbongbong.docall.service.InCallService;
 import com.xbongbong.docall.service.OutCallService;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     // Used to load the 'native-lib' library on application startup.
     static {
@@ -39,6 +41,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setupToolbar(toolbar);
+        // 隐藏返回按钮
+        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        TextView tvTitle = (TextView) findViewById(R.id.tvTitle);
+        tvTitle.setText(getString(R.string.app_name));
 
         // 实例化控件
         Button btnInCall = (Button) findViewById(R.id.btn_in_call);
